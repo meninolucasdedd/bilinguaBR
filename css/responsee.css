@@ -382,7 +382,7 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
 .line .line {padding:0;}
 .hide-xxl {display:none!important;}
 .box {
-  background:none repeat scroll 0 0 #fff;
+  background:none repeat scroll 0 0 rgb(226, 225, 225);
   display:block;
   padding:1.25rem;
   width:100%;
@@ -394,7 +394,7 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   position:static;
 }
 .xxl-offset-1 {margin-left:8.3333%;}
-.xxl-offset-2 {margin-left:16.6666%;}
+.xxl-offset-2 {margin-left:1.6666%;}
 .xxl-offset-five {margin-left:20%;}
 .xxl-offset-3 {margin-left:25%;}
 .xxl-offset-4 {margin-left:33.3333%;}
