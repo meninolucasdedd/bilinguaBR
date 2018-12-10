@@ -20,12 +20,25 @@
 for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
 MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
 mixpanel.init("b311bfa53186708a977506238f968d2c");</script><!-- end Mixpanel -->
+    <style type="text/css">
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://i.imgur.com/zAD2y29.gif') 50% 50% no-repeat #005D24;
+}
+</style>
   </head>
 
   <body class="size-1280">
-    <!-- PREMIUM FEATURES BUTTON -->
-  	<!-- <a target="_blank" class="hide-s" href="../template/virtua-premium-responsive-business-template/" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="img/premium-features.png" alt=""></a> -->
-    <!-- HEADER -->
+    
+    
+  <div id="loader" class="loader"></div>
+  <div style="display:none" id="content-main">
+    
     <header role="banner" class="position-absolute">    
       <!-- Top Navigation -->
       <nav class="background-transparent background-primary-dott full-width sticky">          
@@ -364,8 +377,15 @@ mixpanel.init("b311bfa53186708a977506238f968d2c");</script><!-- end Mixpanel -->
         </div>  
       </section>
     </footer>
+      </div>
     <script type="text/javascript" src="js/responsee.js"></script>
     <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
     <script type="text/javascript" src="js/template-scripts.js"></script> 
+    <script type="text/javascript">
+      jQuery(window).load(function () {
+        $(".loader").fadeOut("slow");
+        $("#content-main").toggle("fast");
+      });
+    </script>
   </body>
 </html>
